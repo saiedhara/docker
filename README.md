@@ -30,3 +30,29 @@ docker  --version or docker info
 6.restart ec2 instance
 
 sudo reboot
+########################################################
+####    Dockerfile                              ######
+####                                            #######
+#######################################################
+
+mkdir dockerfile
+cd dockerfile
+touch Dockerfile
+vim Dockerfile
+
+FROM ubuntu:latest
+LABEL MAINTAINER : CHERRY
+ADD  https://github.com/linuxacademy/content-weather-app.git  /tmp/hello.txt
+
+CMD ["bash"]
+:wq!
+
+
+now build image
+
+docker build -f Dockerfile -t cherryapp .
+
+docker run -it -d cherryapp
+
+docker attach cherryapp
+
