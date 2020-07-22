@@ -30,6 +30,11 @@ docker  --version or docker info
 6.restart ec2 instance
 
 sudo reboot
+
+
+
+
+
 ########################################################
 ####    Dockerfile                              ######
 ####                                            #######
