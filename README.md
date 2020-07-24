@@ -92,7 +92,9 @@ pull 2 docker images centos and alpine and run centos and use prune command to d
  delete an image
  
  docker image rm
+ 
  docker stop 460
+ 
  docker image prune --all --force
  
 
