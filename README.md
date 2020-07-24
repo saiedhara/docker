@@ -97,4 +97,26 @@ pull 2 docker images centos and alpine and run centos and use prune command to d
  
  docker image prune --all --force
  
+ docker image rm 
+ 
+ 
+ docker rmi 
+ 
+ 
+ 
+ create container and name it test-busybox
+ 
+ docker container create --name test-busybox --interactive --tty busybox
+ 
+ docker container create --name ubuntucherry -i -t  ubuntu
+ 
+ start and stop container
+ 
+
+docker container start ubuntucherry
+ 
+ 
+ docker contaainer stop ubuntucherry
+ 
+ 
 
