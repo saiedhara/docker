@@ -86,4 +86,13 @@ pull 2 docker images centos and alpine and run centos and use prune command to d
 
 3#   docker image prune 
      docker image prune --all
+     docker image prune --all --force --filter  "until=200h"
+     
+     
+ delete an image
+ 
+ docker image rm
+ docker stop 460
+ docker image prune --all --force
+ 
 
