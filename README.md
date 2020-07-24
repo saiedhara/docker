@@ -61,3 +61,23 @@ docker run -it -d cherryapp
 
 docker attach cherryapp
 
+
+
+#############################################
+######### DOCKER IMAGES AND CONTAINERS ######
+########                               ######
+###########################################
+
+
+
+pull 2 docker images centos and alpine and run centos and use prune command to delete images
+
+
+1#   docker pull centos
+     docker pull alpine
+     
+2#   docker run -it -d centos /bin/bash
+
+3#   docker image prune 
+     docker image prune --all
+
